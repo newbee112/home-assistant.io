@@ -40,6 +40,8 @@ The way these sensors are displayed in the frontend can be modified in the [cust
 - **vibration**: `On` means vibration detected, `Off` means no vibration (clear)
 - **window**: `On` means open, `Off` means closed
 
+Note that binary-sensor device states are case sensitive, example binary-sensor device class moisture will not accept MQTT msg `On`. MQTT msg `ON` is accepted, same goes for `Off` / `OFF`. 
+
 For analog sensors please check the [component overview](/components/#sensor).
 
 <p class='img'>
